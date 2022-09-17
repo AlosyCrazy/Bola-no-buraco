@@ -79,7 +79,7 @@ function myKeyDown(e)
 	{
 		if(ballY >=0)
 		{
-			ballY = ballY + blockImageHeight;
+			ballY = ballY - blockImageHeight;
 			console.log("Altura da imagem do bloco = " + blockImageHeight);
 			console.log("Quando a tecla direcional cima é pressionada, Y = " + ballX + " , Y = "+ballY);
 			canvas.remove(ballObj);
@@ -103,7 +103,7 @@ function myKeyDown(e)
 	{
 		if(ballX>=0)
 		{
-			ballX = ballX + blockImageWidth;
+			ballX = ballX - blockImageWidth;
 			console.log("Largura da imagem do bloco = " + blockImageWidth);
 			console.log("Quando a tecla direcional esquerda é pressionada, X = " + ballX + " , X = "+ballX);
 			canvas.remove(ballObj);
